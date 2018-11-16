@@ -1,10 +1,8 @@
 # Sprint Challenge: Data Structures and Algorithms
 
-[x] Binary-search-tree.py
-    [x] depth_first_search_for_each
-              and
-    [x] breadth_first_for_each
-[] heap.py - implement Heapsort
+[x] Binary search: depth_first_search_for_each
+[x] Binary search: breadth_first_for_each
+[x] heap.py - implement Heapsort
 [x] Complete data structures answers
 [x] Complete algorithm answers
 
