@@ -1,10 +1,12 @@
 # Sprint Challenge: Data Structures and Algorithms
 
-[x] Binary search: depth_first_search_for_each
-[x] Binary search: breadth_first_for_each
-[x] heap.py - implement Heapsort
-[x] Complete data structures answers
-[x] Complete algorithm answers
+-[x] Binary search
+      -[x]depth_first_search_for_each
+                  and
+      -[x] breadth_first_for_each
+-[] heap.py - implement Heapsort
+-[x] Complete data structures answers
+-[x] Complete algorithm answers
 
 
 In this week's Sprint you explored and implemented some classic algorithmic approaches and used them to solve novel problems. You also implemented some classic and fundamental data structures and learned about how to go about evaluating their respective runtimes and performance. This Sprint Challenge aims to assess your comfort with these topics through exercises that build on the data structures you implemented and the algorithmic intuition you've started to build up.
