@@ -1,11 +1,23 @@
 def heapsort(arr):
- pass 
- 
+    # note that this is a max-heap
+    heap = Heap()
+    sorted_list = []
+    # insert each element of the array in the heap
+    for e in arr:  # O(n)
+        heap.insert(e)  # O(log n)
+
+    # heap organizes the data for us, so just get it back out
+    while heap.get_size() > 0:  # O(n)
+        sorted_list.append(heap.delete())  # O(log n)
+
+    # return the reversed list (ascending order)
+    return sorted_list[::-1]  # O(n)
+
 
 class Heap:
   def __init__(self):
     self.storage = []
-    
+
   def insert(self, value):
     self.storage.append(value)
     self._bubble_up(len(self.storage) - 1)
@@ -15,7 +27,7 @@ class Heap:
     self.storage[0] = self.storage[len(self.storage) - 1]
     self.storage.pop()
     self._sift_down(0)
-    return retval 
+    return retval
 
   def get_max(self):
     return self.storage[0]
@@ -40,4 +52,4 @@ class Heap:
     if index * 2 + 2 > len(self.storage) - 1:
       return index * 2 + 1
     else:
-      return index * 2 + 1 if self.storage[index * 2 + 1] > self.storage[index * 2 + 2] else index * 2 + 2
+return index * 2 + 1 if self.storage[index * 2 + 1] > self.storage[index * 2 + 2] else index * 2 + 2
